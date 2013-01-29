@@ -1,10 +1,11 @@
 package it.redoddity.elephant;
 
+import java.awt.Color;
+
 public class Elephant {
 	
-	private Integer full = 0;
 	private Boolean feeded = false;
-	
+	private Color color = Color.GRAY;
 	private String name = null;
 
 	public Elephant(String name)
@@ -14,12 +15,40 @@ public class Elephant {
 	
 	
 	public boolean isEmpty() {
-		if(full<10)
-		return true;
-		else return false;
+		return !this.feeded;
 	}
 
 	public void feed() {
-		full += 10;		
+		this.feeded = true;	
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public int getWeight() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public void growOneYear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setColor(Color green) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public Color getColor() {
+		
+		return this.color;
+	}
+
+	public void kick() {
+		// TODO Auto-generated method stub
+		
 	}
 }
